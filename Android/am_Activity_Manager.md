@@ -27,9 +27,11 @@
 ``` shell
 adb shell am start -n <package>/<activity>
 adb shell am start -n com.android.settings/.Settings
+
 # starting with intent details
 adb shell am start -n <package>/<activity> --es <Intent Parameter> <Intent Parameter value>
 adb shell am start -n com.android.settins/.Settings --es "username" "admin"
+
 # Starting activity for implicit intent
 adb shell am start -a <intent action> -c <intent category>
 adb shell am start -a com.apphacking.changepin -c android.intent.category.DEFAULT 
